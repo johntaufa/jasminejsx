@@ -1,1 +1,3 @@
-﻿#include "jasmine/boot.jsx"#include "spec/calculator.jsx"runJasmine();
+﻿#include "jasmine/boot.jsx"
+#include "spec/calculator.jsx"
+runJasmine();
