@@ -20,12 +20,9 @@ $.global.jasmineRequire.JsxReporter = function() {
             pendingCount,
             failedSuites = [];
 
-        print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n');
-        print('***************************');
-        print('ExtendScript');
-        print('Jasmine');
-        print('Runner');
-        print('***************************');
+        print('\n');
+        print('JasmineJsx Runner');
+        print('------------------------');
 
         this.jasmineStarted = function() {
             specCount = 0;
