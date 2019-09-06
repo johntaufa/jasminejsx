@@ -3903,12 +3903,13 @@ getJasmineRequireObj().QueueRunner = function (j$) {
 
     for (iterativeIndex = recursiveIndex; iterativeIndex < length; iterativeIndex++) {
       var queueableFn = queueableFns[iterativeIndex]
-      if (queueableFn.fn.length > 0) {
-        attemptAsync(queueableFn)
-        return
-      } else {
-        attemptSync(queueableFn)
-      }
+      // Do not attempt to use asyncronous tests in ExtendScript
+      // if (queueableFn.fn.length > 0) {
+      //     attemptAsync(queueableFn);
+      //     return;
+      // } else {
+      attemptSync(queueableFn)
+      // }
     }
 
     this.clearStack(function () {
